@@ -21,3 +21,5 @@ console.log(+stringNumber);
 
 let number = 1000;
 console.log(typeof number.toString());
+ 
+// some change
