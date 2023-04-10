@@ -432,5 +432,29 @@ console.log(iteratororor.next())
 console.log(iteratororor.next())
 console.log(iteratororor.next())
 
-/// *************
+// *****************************************************************
 
+
+const objekt = {
+  meno: 'Meno',
+  metoda: function(){
+    console.log(this.meno)
+  }
+}
+
+objekt.metoda()
+
+// *****************************************************************
+
+const todo = {
+  what: 'Clean kitchen',
+  date: 'today',
+  isDone: false
+}
+
+const updatedTodo = {
+  ...todo, isDone: true
+}
+
+console.log(updatedTodo)
+console.log('original one: ', {...todo})
