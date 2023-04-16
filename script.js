@@ -458,3 +458,25 @@ const updatedTodo = {
 
 console.log(updatedTodo)
 console.log('original one: ', {...todo})
+
+
+// *****************************************************************
+
+
+const aha = new Set();
+aha.add('boom')
+console.log(aha)
+
+const map1 = new Map();
+
+map1.set('a', 1);
+map1.set('b', 2);
+map1.set('c', 3);
+
+console.log(map1)
+console.log(map1.get('a'))
+
+
+// *****************************************************************
+
+
