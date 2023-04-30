@@ -480,3 +480,16 @@ console.log(map1.get('a'))
 // *****************************************************************
 
 
+const mojObj = {
+  meno: 'Meno',
+  cislo: 4,
+  mesto: 'Surany',
+  zviera: 'pes',
+  vec: 'hodinky'
+}
+
+const mojJson = JSON.stringify(mojObj, null, 2)
+console.log(mojJson)
+
+console.log(typeof mojJson)
+
