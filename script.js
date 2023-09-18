@@ -493,3 +493,49 @@ console.log(mojJson)
 
 console.log(typeof mojJson)
 
+// *****************************************************************
+
+
+
+// bind() =  Borrows a function, & creates a copy. 
+//           "this" keyword replaced with the object
+//           passed in as an argument
+
+speak = function(sound){
+  console.log(this.name,"is",sound);
+}
+
+let dog = {
+  name: "dog",
+}
+
+let parrot = {
+  name: "parrot",
+}
+
+bark = speak.bind(dog, "barking");
+chirp = speak.bind(parrot, "chirping");
+
+speak()
+bark();
+chirp();
+
+// *****************************************************************
+
+function pushSthIntoCollection(sth, collection) {
+  collection.push(sth);
+  console.log(collection);
+}
+pushSthIntoCollection(false, [true, false, false, true]);
+
+
+// *****************************************************************
+
+function runAnotherFunction(){
+  return function runThis(){
+    console.log('ruuuuuuuun')
+  }()
+}
+
+runAnotherFunction()
+
